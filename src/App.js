@@ -1,10 +1,10 @@
 import "./App.css";
-import Board from "./Components/Board";
+import Game from "./Components/Game";
 function App() {
   return (
     <div className="game_container">
       <button className="button_newGame">New Game</button>
-      <Board />
+      <Game />
     </div>
   );
 }

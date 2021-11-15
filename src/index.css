@@ -253,9 +253,11 @@ body {
 }
 
 .X {
+  font-size: 10rem;
   color: #ffcad4;
 }
 .O {
+  font-size: 10rem;
   color: #f7af9d;
 }
 
