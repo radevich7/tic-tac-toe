@@ -276,7 +276,7 @@ h3 {
   left: 10vw;
   color: rgba(102, 184, 201, 1);
 }
-.button_newGame {
+.button_reset {
   background-color: #f7af9d;
   color: #66b8c9;
   font-size: 2rem;
@@ -290,7 +290,7 @@ h3 {
   top: 40vh;
   right: 15vw;
 }
-.button_newGame:active {
+.button_reset:active {
   box-shadow: 3px 3px 3px gray;
 }
 
@@ -300,7 +300,7 @@ h3 {
     height: 500px;
     margin: 40px;
   }
-  .button_newGame {
+  .button_reset {
     top: 40vh;
     right: 10vw;
   }
@@ -315,7 +315,7 @@ h3 {
     height: 400px;
     margin: 40px;
   }
-  .button_newGame {
+  .button_reset {
     top: 38vh;
     right: 10vw;
     font-size: 1.2rem;

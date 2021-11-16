@@ -30,7 +30,7 @@ const Game = () => {
 
   return (
     <div className="game_container">
-      <button className="button_newGame" onClick={resetHanlder}>
+      <button className="button_reset" onClick={resetHanlder}>
         Reset
       </button>
 
