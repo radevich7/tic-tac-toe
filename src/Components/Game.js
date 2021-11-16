@@ -9,7 +9,6 @@ const Game = () => {
   const [player1, setPlayer1] = useState(true);
   const winner = Helper(array[stepNumber]);
   const whoIsNext = player1 ? "X" : "O";
-
   const handleClick = (i) => {
     const current = array[stepNumber];
     const squares = [...current];
