@@ -234,21 +234,25 @@ body {
 }
 
 .board {
-  border: 10px solid rgba(192, 132, 151, 1);
+  /* border: 10px solid rgba(192, 132, 151, 1); */
+  border: none;
+  background-color: rgba(192, 132, 151, 1);
   width: 600px;
   height: 600px;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1rem;
+  position: relative;
 }
 .square {
   /* width: 150px;
   height: 150px; */
+  border: none;
   float: left;
   text-align: center;
   line-height: 150px;
   cursor: pointer;
-  /* background-color: transparent; */
+  background-color: #b0d0d3;
   /* color: none; */
 }
 
@@ -260,14 +264,65 @@ body {
   font-size: 10rem;
   color: #f7af9d;
 }
-
+h1 {
+  font-size: 2rem;
+  color: rgba(192, 132, 151, 1);
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 2rem;
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  color: rgba(102, 184, 201, 1);
+}
 .button_newGame {
   background-color: #f7af9d;
+  color: #66b8c9;
   font-size: 2rem;
   padding: 15px 25px;
-  /* margin: 0 auto; */
+  box-shadow: 6px 6px 6px gray;
   text-align: center;
   border: none;
   border-radius: 10px;
   margin-bottom: 70px;
+  position: absolute;
+  top: 40vh;
+  right: 15vw;
+}
+.button_newGame:active {
+  box-shadow: 3px 3px 3px gray;
+}
+
+@media (max-width: 1400px) {
+  .board {
+    width: 500px;
+    height: 500px;
+    margin: 40px;
+  }
+  .button_newGame {
+    top: 40vh;
+    right: 10vw;
+  }
+  h3 {
+    top: 40vh;
+    left: 5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .board {
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+  }
+  .button_newGame {
+    top: 38vh;
+    right: 10vw;
+    font-size: 1.2rem;
+  }
+  h3 {
+    top: 40vh;
+    left: 5vw;
+    font-size: 1.2rem;
+  }
 }

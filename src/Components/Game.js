@@ -25,15 +25,19 @@ const Game = () => {
   };
   const resetHanlder = () => {
     setStepNumber(0);
+    setArray([Array(9).fill(null)]);
   };
 
   return (
-    <>
-      <h1>React Tic Tac Toe - With Hooks</h1>
+    <div className="game_container">
+      <button className="button_newGame" onClick={resetHanlder}>
+        Reset
+      </button>
+
       <Board squares={array[stepNumber]} onClick={handleClick} />
+
       <h3>{winner ? "Winner: " + winner : "Next Player: " + whoIsNext}</h3>
-      <button onClick={resetHanlder}>RESET</button>
-    </>
+    </div>
   );
 };
 
